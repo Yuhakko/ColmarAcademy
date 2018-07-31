@@ -61,10 +61,65 @@ h1 {
   line-height: 2.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
+  color: #505050;
 }
 
 h2 {
   font-size: 1.25rem;
   font-weight: bold;
   color: grey;
+}
+
+button {
+    background-color: Grey;
+    border: none;
+    color: white;
+    padding: 0.5rem 5.5rem;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+/*articles*/
+.information {
+  display: flex;
+  padding-left: 1.5rem;
+}
+
+.main img {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-right: 1.5rem;
+  width: 100%;
+}
+
+.main {
+  width: 60%;
+}
+
+.rest {
+  display: flex;
+  flex-direction: column;
+  width: 40%
+}
+
+.firstarticle,
+.campus,
+.guest {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstarticle img,
+.campus img,
+.guest img {
+  height: auto;
+  width: 35%;
 }
