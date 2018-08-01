@@ -1,5 +1,6 @@
 html, body{
   font-size: 16px;
+  font-family: Helvetica, sans-serif;
 
 }
 
@@ -29,6 +30,7 @@ header .left {
 
 header nav{
   padding-right: 1.5rem;
+  height: 2rem;
 }
 
 span a{
@@ -40,7 +42,7 @@ span a{
   display: flex;
   align-items: center;
   background-color: lightgrey;
-
+  margin-bottom: 2rem;
 }
 
 .jumbotron img {
@@ -54,6 +56,7 @@ span a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 h1 {
@@ -89,20 +92,29 @@ button {
 }
 
 .main img {
-  padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-right: 1.5rem;
+
   width: 100%;
 }
 
 .main {
   width: 60%;
+  margin-right: 1.5rem;
+}
+
+.main h1{
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+.main p{
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .rest {
   display: flex;
   flex-direction: column;
-  width: 40%
+  width: 40%;
 }
 
 .firstarticle,
@@ -110,11 +122,21 @@ button {
 .guest {
   display: flex;
   align-items: center;
+  border: 0.5px solid grey;
+  border-collapse: collapse;
+}
+
+.firstarticle:hover,
+.campus:hover,
+.guest:hover {
+  background-color: lightgrey;
 }
 
 .text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  font-size: 0.75rem;
 }
 
 .firstarticle img,
@@ -122,4 +144,87 @@ button {
 .guest img {
   height: auto;
   width: 35%;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #6698E2;
+  font-weight: bold;
+}
+
+.text p{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1rem;
+}
+
+.text h2{
+  font-size: 1rem;
+}
+
+/*articles*/
+.courses{
+  background-color: lightgrey;
+  padding-top: 2rem;
+}
+
+.courses h1{
+  padding-bottom: 2rem;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.list{
+  margin: 0rem 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list::before{
+  margin: 2rem;
+}
+
+.art1,
+.art2,
+.art3,
+.art4,
+.art5,
+.art6 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 33%;
+  margin-bottom: 2rem;
+}
+
+.art1 img,
+.art2 img,
+.art3 img,
+.art4 img,
+.art5 img,
+.art6 img{
+  height: auto;
+  width: 100%;
+}
+
+.arttext {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.arttext h3{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: grey;
+}
+
+.arttext p{
+  margin-bottom: 1.5rem;
+  color: grey;
+  line-height: 1.5rem;
 }
