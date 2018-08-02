@@ -2,6 +2,8 @@ html, body{
   font-size: 16px;
   font-family: Helvetica, sans-serif;
   color: #808080;
+  max-width: 1150px;
+  margin: auto;
 }
 
 header{
@@ -16,7 +18,6 @@ header .left {
   padding-left: 1.5rem;
   font-size: 2rem;
   align-items: center;
-
 }
 
 .left img{
@@ -46,7 +47,27 @@ span a{
   padding: 0rem .5rem;
   color: grey;
 }
+
+.mobilenav{
+  display: none;
+}
+
     /*mobile version*/
+
+@media only screen and (max-width: 480px) {
+
+  header nav,
+  header b,
+  header p{
+    display: none;
+  }
+
+  .mobilenav{
+    width: 220px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 
 
 /*Jumbotron*/
@@ -67,7 +88,7 @@ span a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 4rem;
+  width: 40%;
 }
 
 h1 {
@@ -90,8 +111,8 @@ h2 {
 
 button {
   background-color:	#484848;
-  border: none;
-  padding: 0.5rem 5.5rem;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
   margin-left: 1.5rem;
   margin-right: 3rem;
   text-align: center;
@@ -103,6 +124,12 @@ button {
 
 button a{
   color: white;
+}
+
+@@media only screen and (max-width: 480px) {
+  .jumbotron{
+    flex-wrap: wrap;
+  }
 }
 
 /*articles*/
