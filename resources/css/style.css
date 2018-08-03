@@ -245,7 +245,7 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
-  .main{
+  .information .main{
     display: none;
   }
 
@@ -440,8 +440,14 @@ video{
       display: none;
     }
 
-    .remaining{
-      display: inline-block;
+    .remaining .main h2,
+    .remaining .main p{
+      display: none;
+    }
+
+    .remaining .main{
+      width: 100%;
+      padding-bottom: 1.5rem;
     }
 }
 
